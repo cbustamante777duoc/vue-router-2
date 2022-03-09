@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue';
 import Contact from '../views/Contact.vue';
 import About from '../views/About.vue';
+import Game from '../views/Game.vue';
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  // ruta dinamica
+  {
+    path:'/ps5/:name',
+    component: Game
   }
 ]
 
