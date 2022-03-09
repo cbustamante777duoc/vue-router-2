@@ -3,6 +3,7 @@ import Home from '../views/Home.vue';
 import Contact from '../views/Contact.vue';
 import About from '../views/About.vue';
 import Game from '../views/Game.vue';
+import Error404 from '../views/Error404.vue';
 
 const routes = [
   {
@@ -24,6 +25,10 @@ const routes = [
   {
     path:'/ps5/:name',
     component: Game
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: Error404
   }
 ]
 

@@ -15,7 +15,7 @@ export default {
     const route = useRoute();
     const router = useRouter();
 
-    // console.log(route.params);
+    console.log(route.params);
     console.log(router);
 
     const load = () => {
